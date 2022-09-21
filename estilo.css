@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  /* toma el padding sin agregar al tamaño del contenedor*/
+  box-sizing: border-box;
+}
+/* agregue tipografia de google fonts */
+body {
+  font-family: "Combo", cursive;
+}
+
+header {
+  font-size: 1em;
+  background-image: linear-gradient(90deg, rgb(30, 154, 21), rgb(29, 186, 136));
+  height: 8em;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  text-align: center;
+  /* position: fixed; */
+  top: 0;
+  width: 100%;
+}
+nav {
+  background-color: rgb(73, 73, 73);
+  font-size: 1.2em;
+  height: 3.5em;
+  text-align: center;
+  padding-top: 20px;
+  /* margin-top: 120px; */
+  /* position: fixed; */
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+.ul-nav {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+main {
+  margin-top: 2em;
+}
+
+/* quite el "li" porque afecta a todas las listas de la pagina pasa lo mismo si ponemos "a" */
+.categorias {
+  display: inline;
+  padding-inline: 50px;
+}
+/* todos los "a" que esten dentro del nav */
+nav a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+nav a:hover {
+  background-color: black;
+}
+nav a:active {
+  background-color: chartreuse;
+}
+
+footer {
+  /* background-image: linear-gradient(90deg, rgb(30, 154, 21), rgb(29, 186, 136));*/
+  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  height: 8em;
+  width: 100%;
+  bottom: 0px;
+  text-align: center;
+  padding-top: 30px;
+  margin-top: 30px;
+}
+.footer {
+  display: flex; /* flex-direccion = row  y flex-wrap = nowrap por defecto 
+ (wrap permite que se coloquen como elementos en multilinea y nowrap los acomoda en una linea) */
+  justify-content: space-evenly; /*espacio entre items*/
+}
+.redes {
+  margin-top: 1rem;
+  color: black;
+}
+
+
