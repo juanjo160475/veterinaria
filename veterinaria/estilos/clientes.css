@@ -1,0 +1,12 @@
+/*estilo para clientes*/
+
+.videos > iframe {
+  width: 50%;
+  height: 500px;
+}
+@media screen and (max-width: 554px) {
+  .videos iframe {
+    width: 100%;
+    height: 500px;
+  }
+}
