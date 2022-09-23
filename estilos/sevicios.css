@@ -181,14 +181,15 @@
   grid-row: 3/4;
   padding-left: 1em;
    justify-self: center; 
-  
+  text-decoration: underline;
 }
 .grid-productos ol{
   padding-top: .5em;
 }
 .grid-productos{
   padding-top: 1em;
-  border-bottom: 1px solid black;
+  border-bottom: none;
+  
 }
 .accesorios {
   grid-column: 1/7;
@@ -201,12 +202,12 @@
 .juguetes {
   grid-column: 1/7;
   grid-row: 8/10;
-  border-bottom: none;
+  border-bottom: 1px solid black;
 }
 .cuchas {
   grid-column: 7/13;
   grid-row: 8/10;
-  
+  border-bottom: 1px solid black;
 }
 .grid-especialidades {
   grid-column: 1/13;
@@ -230,10 +231,11 @@
   position: relative;
 }
 .belleza-texto{
-  font-size: .7em;
+  font-size: 1em;
+  font-weight: bold;
   position: absolute;
-  width: 50%;
-  left: 30%;
+  width: 100%;
+  left: 2%;
   top: 10%;
   
 }
