@@ -27,8 +27,8 @@
 }
 .grid-aviso > .aviso {
   display: inline-block;
-  color: crimson;
-  background-color: yellowgreen;
+  color: var(--color4);
+  background-color: var(--color3);
   border: 2px dotted black;
   padding: .5em;
 }
@@ -41,13 +41,14 @@
   align-self: start;
   justify-self: center; 
   
+  
 }
 .grid-animales img{
   width: 45%;
   height: 50%;
   box-shadow: 5px 5px 10px rgba(0, 0,0, 0.3);
   border-radius: 120px;
-
+  background-color: var(--color2);
 }
 
 .perro {
@@ -116,24 +117,28 @@
 .grid-belleza {
   grid-column: 4/10;
   grid-row: 11/16;
-  border: 1px solid rgb(10, 9, 9);
+  
 }
 .img-belleza {
   width: 100%;
   position: relative;
+  z-index: -1;
 }
+
 .belleza-texto{
   position: absolute;
+  font-weight: bold;
   width: 50%;
-  left: 30%;
-  bottom: 30%;
+  left: 5%;
+  bottom: 5%;
+  color:var(--color2);
+  /* text-shadow: 2px 2px black;  */
   
 }
-.belleza-texto h1, .belleza-texto p{
-  text-shadow: 2px 2px white; 
-}
+
 .img-belleza img {
   width: 100%;
+  filter: drop-shadow(16px 16px 20px var(--color3))  brightness(0.5);
 }
 
 
@@ -224,24 +229,23 @@
 .grid-belleza {
   grid-column: 1/13;
   grid-row: 14/17;
-  border: 1px solid rgb(10, 9, 9);
+  
 }
 .img-belleza {
   width: 100%;
-  position: relative;
+   position: relative; 
+  
 }
 .belleza-texto{
   font-size: 1em;
-  font-weight: bold;
+  /* font-weight: bold; */
   position: absolute;
   width: 100%;
   left: 2%;
   top: 10%;
   
 }
-.belleza-texto h1, .belleza-texto p{
-  text-shadow: 2px 2px white; 
-}
+
 .img-belleza img {
   width: 100%;
 

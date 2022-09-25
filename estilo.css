@@ -7,10 +7,23 @@
 body {
   font-family: "Combo", cursive;
 }
-
+:root{
+  /* #4ead15
+#DAF7A6
+#FFC300
+#FF5733
+#C70039
+#900C3F */
+  --color1:rgb(78, 173, 21);
+  --color2:rgb(218, 247, 166);
+  --color3:rgb(255, 195, 0);
+  --color4:rgb(255, 87, 51);
+  --color5:rgb(199, 0, 57);
+  --color6:rgb(144, 12, 63);
+}
 header {
   font-size: 1em;
-  background-image: linear-gradient(90deg, rgb(30, 154, 21), rgb(29, 186, 136));
+  background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
   height: 8em;
   padding-top: 30px;
   padding-bottom: 10px;
@@ -21,11 +34,13 @@ header {
 }
 
 nav {
-  background-color: rgb(73, 73, 73);
+  /* background-color: rgb(73, 73, 73); */
+  background-color: var(--color6);
   font-size: 1.2em;
   height: 3.5em;
   text-align: center;
   padding-top: 20px;
+  position: sticky;
   /* margin-top: 120px; */
   top: 0;
   width: 100%;
@@ -47,20 +62,21 @@ main {
 }
 /* todos los "a" que esten dentro del nav */
 nav a {
-  color: white;
+  color: var(--color2);
   text-decoration: none;
   display: block;
 }
 nav a:hover {
-  background-color: black;
+  background-color: var(--color5);
+  border-radius:30px;
 }
 nav a:active {
-  background-color: chartreuse;
+  background-color: var(--color4);
 }
 
 footer {
-  /* background-image: linear-gradient(90deg, rgb(30, 154, 21), rgb(29, 186, 136));*/
-  background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+  background-image: linear-gradient(90deg, var(--color1), rgb(29, 186, 136));
+  /* background-image: linear-gradient(to right, var (--color1) 0%, #38f9d7 100%); */
   height: 8em;
   width: 100%;
   bottom: 0px;
